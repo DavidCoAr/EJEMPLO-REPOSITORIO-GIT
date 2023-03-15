@@ -1,0 +1,52 @@
+.contenedor_padre_1{
+    border: 2px solid black;
+    width: 800px;
+    height: 400px;
+    /* defino un contenedor padre de tipo flex */
+        /* así manejaremos mejor a sus elementos hijos */
+    display: flex;
+     /* por defecto, si no decimos nada, el flex-direction es row (fila) */
+        /* usamos flex-wrap: wrap 
+            si queremos que los items ocupen más de una fila/columna */
+    flex-direction: row;
+    /* centra el contenido */
+    justify-content: center;
+}
+
+.contenedor_padre_2{
+    border: 2px solid black;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    /* los reparte dejando mismo espacio entre elementos
+        sin contar los extremos */
+        /* Con space-around deja el mismo margen izquierda a derecha de los elementos */
+    justify-content: space-between;
+}
+
+.contenedor_padre_3{
+    border: 2px solid black;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* ajusta items en base al eje vertical */
+    align-items: self-end;
+}
+
+.contenedor_padre_4{
+    border: 2px solid black;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* ajusta items en base al eje vertical */
+    align-items:self-end;
+}
+.elemento_hijo_imagen{
+    width: 50px;
+    height: 50px;
+}
